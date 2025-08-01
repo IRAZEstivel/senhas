@@ -8,21 +8,27 @@
     --borda: #0075FF;
     --roboto: 'Roboto', sans-serif;
     --roboto-mono: 'Roboto Mono', monospace;
+    /*É frequentemente utilizada para definir variáveis CSS globais, que podem ser acessadas e utilizadas em qualquer lugar do document*/
 }
 
 * {
     font-weight: 400;
+    /*é usada para definir o quão espessa ou fina a fonte de um texto deve aparecer*/
 }
 
 body {
     color: var(--branco);
+    /*é usada para definir a cor do texto de um elemento HTML*/
     background-color: var(--cor-de-fundo);
+    /*basta aplicar a propriedade ao seletor CSS correspondente ao elemento desejado, especificando a cor desejad*/
     font-family: var(--roboto);
+    /*é usada para especificar a lista de fontes que serão usadas para exibir o texto de um elemento*/
 }
 
 .titulo-principal {
     font-family: var(--roboto-mono);
     font-size: 32px;
+    /*aplicá-la a um elemento HTML e definir um valor para o tamanho da fonte*/
 }
 
 .titulo-secundario {
@@ -31,32 +37,42 @@ body {
 
 .conteudo-titulo {
     text-align: center;
+    /*é usada para definir o alinhamento horizontal do conteúdo de um elemento, como texto dentro de um bloco de texto*/
     margin-top: 80px;
+    /*é usada para definir a margem superior de um elemento, ou seja, o espaço transparente entre a borda superior do elemento e o conteúdo ou elemento adjacente*/
 }
 
 .conteudo-senha {
     margin-top: 80px;
     background: var(--fundo-senha);
+    /*é usada para definir a aparência do fundo de um elemento HTML*/
     padding: 24px;
+    /*é usada para definir o espaçamento interno de um elemento, ou seja, a distância entre o conteúdo do elemento e sua borda*/
     border-bottom: 6px solid var(--borda);
+    /*é usada para estilizar a borda inferior de um elemento HTML*/
 }
 
 #campo-senha {
     background-color: var(--fundo-senha);
     border: none;
+    /*permite adicionar bordas a elementos HTML, definindo sua espessura, estilo e cor*/
     color: var(--branco);
     font-family: var(--roboto-mono);
     font-size: 40px;
     width: 70%;
+    /*é usada para definir a largura de um elemento*/
 }
 
 #campo-senha:focus {
     outline: none;
+    /*é usada para definir um contorno ao redor de um elemento, fora de sua borda, com propriedades como largura, estilo e cor*/
 }
 
 .conteudo {
     max-width: 1200px;
+    /*é usada para definir a largura máxima que um elemento pode ter*/
     margin: 0 auto;
+    /*é usada para criar espaço ao redor de um elemento HTML, fora de suas bordas*/
 }
 
 .parametro {
@@ -77,8 +93,11 @@ body {
 
 .parametro-coluna__senha {
     display: flex;
+    /*controla a forma como um elemento é renderizado na página*/
     flex-direction: column;
+    /*define a direção na qual os itens flexíveis são dispostos dentro do contêiner flexível*/
     justify-content: center;
+    /*é utilizada para alinhar itens flexíveis dentro de um contêiner flexível ao longo do eixo principal*/
 }
 
 .parametro-senha {
@@ -98,12 +117,15 @@ body {
     padding: 24px;
     font-size: 24px;
     cursor: pointer;
+    /*é usada para definir a aparência do cursor do mouse quando este passa sobre um elemento específico*/
 }
 
 .parametro-senha__texto {
     padding: 24px;
     border-top: 2px solid var(--borda);
+    /* usada para definir a borda superior de um elemento*/
     border-bottom: 2px solid var(--borda);
+    /*é usada para definir a borda inferior de um elemento*/
     margin: 0;
     font-size: 24px;
 }
@@ -115,6 +137,7 @@ label {
 .checkbox {
     width: 20px;
     height: 20px;
+    /*e usada paara definir a altura de um elemento*/
     cursor: pointer;
 }
 
@@ -127,6 +150,7 @@ label {
 .forca {
     height: 30px;
     position: relative;
+    /*controla o posicionamento de elementos HTML em uma página*/
     bottom: 30px;
 }
 
@@ -154,5 +178,6 @@ label {
 @media screen and (min-width: 768px) {
     .parametro-coluna__senha {
         flex-direction: row;
+        /*define a direção na qual os itens flexíveis são dispostos dentro do contêiner flexível.*/
     }
 }

@@ -2,22 +2,35 @@
 <html lang="pt-br">
 
 <head>
+    <!--define a seção de cabeçalho do documento, onde são inseridos metadados e informações sobre a página, como o título, metatags, links
+     para folhas de estilo e scripts-->
     <meta charset="UTF-8">
+    <!--define metadados sobre um documento HTML, fornecendo informações que não são exibidas diretamente no conteúdo da página, mas são importantes 
+    para navegadores, mecanismos de busca e redes sociais-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gerador de senha</title>
+    <!--define o título de uma página da web-->
     <link rel="stylesheet" href="style.css">
+    <!--estabelecer uma relação entre o documento HTML atual e um recurso externo, como um arquivo CSS, um ícone ou informações de pré-carregamento-->
 </head>
 
 <body>
+    <!--definir o corpo do documento, ou seja, o conteúdo visível de uma página web-->
     <section class="conteudo">
+        <!--é usada para definir seções temáticas em um documento, agrupando conteúdo relacionado e criando uma estrutura lógica para a página-->
         <div class="conteudo-titulo">
+            <!--agrupar outros elementos HTML e criar seções ou divisões em um documento-->
             <img src="unlock.svg" alt="cadeado fechado">
+            <!--é usada para inserir imagens em uma página web-->
             <h2 class="titulo-principal">Gerador de senhas</h2>
+            <!--é usada para definir o título principal de uma página da web, funcionando como o título mais importante, tambem vai de h1 ate h6-->
             <h3 class="titulo-secundario">Gere instantaneamente uma senha aleatória e segura</h3>
         </div>
         <div class="conteudo-senha">
             <label for="senha">Senha</label>
+            <!--associar um texto descritivo (rótulo) a um elemento de formulário-->
             <input name="senha" type="text" id="campo-senha" readonly>
+            <!--é usada para criar campos de entrada interativos em formulários, permitindo que os usuários forneçam dados-->
         </div>
         <div class="parametro">
             <h3 class="parametro-titulo">Personalize sua senha</h3>
@@ -26,7 +39,9 @@
                     <h4 class="parametro-senha__titulo">Número de caracteres</h4>
                     <div class="parametro-senha-botoes">
                         <button class="parametro-senha__botao">-</button>
+                        <!--é utilizada para criar botões clicáveis em páginas web-->
                         <p class="parametro-senha__texto">12</p>
+                        <!--é utilizada para definir um parágrafo de texto-->
                         <button class="parametro-senha__botao">+</button>
                     </div>
                 </div>
